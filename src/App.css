@@ -1,0 +1,34 @@
+.container{
+    max-width: 1300px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.input {
+    position: relative;
+    outline: none;
+}
+
+.search {
+    position: absolute;
+    top: 15px;
+    left: 7px;
+    width: 19px;
+}
+
+.inputs::placeholder {
+    color: #636363;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+    transition: 0.8s;
+}
+
+.logout-btn {
+    display: block;
+    margin-top: 10px;
+    position: absolute;
+    right: 0;
+    transition: 0.8s;
+}
