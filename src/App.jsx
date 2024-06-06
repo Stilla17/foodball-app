@@ -4,17 +4,17 @@ import Navbar from "./Component/Navbar";
 import { Route, Routes } from "react-router-dom";
 import Layout from "./Pages/Layout";
 import Serkan from "./Pages/Serkan";
-import LoginPage from "./Pages/LoginPage";
+import Matches from "./Component/Matches";
+import { Tabs } from "@mui/material";
+import LabTabs from "./Component/LabTabs";
+import Flags from "./Component/Flags";
 
 function App() {
   return (
-    <>
-      <Routes>
-        <Route path="/" element={<Navbar />} />
-        <Route path="/login" element={<LoginPage />} />
-      </Routes>
-
-    </>
+    <div className="app">
+      
+      <Layout></Layout>
+    </div>
   );
 }
 
