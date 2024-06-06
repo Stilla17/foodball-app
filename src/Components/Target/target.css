@@ -1,0 +1,56 @@
+.App {
+  text-align: center;
+  margin-left: 10%;
+  display: flex;
+}
+
+.live-match-container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-around;
+  margin: 20px 0;
+}
+
+.team-logo {
+  margin-right: 20px;
+}
+
+.right-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1px;
+  border: 1px solid black;
+  border-radius: 8px;
+  padding: 12px;
+}
+
+.live-match,
+.score {
+  align-items: center;
+}
+
+.score {
+  display: flex;
+  align-items: center;
+}
+
+.score img {
+  margin: 0 10px;
+}
+
+.stat-section {
+  margin: 20px 0;
+}
+
+.stat-details {
+  display: flex;
+  justify-content: flex-start;
+  gap: 20px;
+}
+
+.stat-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
