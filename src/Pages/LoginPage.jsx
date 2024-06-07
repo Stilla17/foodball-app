@@ -1,7 +1,5 @@
-// src/components/LoginPage.jsx
-
 import React, { useState } from "react";
-import Alert from "@mui/material/Alert";
+import Alert from '@mui/material/Alert';
 import CheckIcon from "@mui/icons-material/Check";
 import { useNavigate } from 'react-router-dom';
 
@@ -14,16 +12,15 @@ function LoginPage() {
 
   const handleLogin = (e) => {
     e.preventDefault();
-    // Placeholder login logic
     if (email === "serkan@gmail.com" && password === "123") {
       setShowSuccessAlert(true);
-      setError(""); // Clear any previous error
+      setError("");
       setTimeout(() => {
         navigate('/');
-      }, 2000); // Redirect after 2 seconds
+      }, 2000);
     } else {
       setError("Invalid email or password");
-      setShowSuccessAlert(false); // Hide success alert if login fails
+      setShowSuccessAlert(false);
     }
   };
 

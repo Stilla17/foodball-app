@@ -1,10 +1,10 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import Navbar from "../Component/Navbar";
 
-function Layout() {
+function Layout({ children }) {
   return (
     <div>
-      <Link to="/main">Serkan</Link>
+      <Navbar />
     </div>
   );
 }
