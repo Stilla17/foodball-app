@@ -1,10 +1,17 @@
 import React from "react";
-import Navbar from "../Component/Navbar";
+import Banner from '../Component/Banner/Banner'
+import Navbar from '../Component/Navbar/Navbar'
+import BasicSelect from '../Component/Standings/BasicSelect'
+import Matches from "../Component/Matches/Matches";
+
 
 function Layout({ children }) {
   return (
-    <div>
+    <div className="">
       <Navbar />
+      <Banner />
+      <Matches />
+      <BasicSelect />
     </div>
   );
 }

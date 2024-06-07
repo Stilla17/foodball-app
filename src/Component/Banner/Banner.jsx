@@ -1,29 +1,6 @@
-import React, { useState, useEffect } from 'react'
-import axios from 'axios';
+import React from 'react'
 
 function Banner() {
-
-    const [standings, setStandings] = useState(null);
-
-    const apiKey = "9bf177dc108255f879a181c09a4e8076232e54d7ad8d1687cdbbf3e84d56d93d";
-
-    const getStandings = async () => {
-        try {
-            const response = await axios.get("https://apiv3.apifootball.com/?action=get_standings&league_id=152", {
-                params: {
-                    APIkey: apiKey
-                }
-            });
-            setStandings(response.data);
-            console.log(response);
-        } catch (error) {
-            console.error("Failed to fetch standings:", error);
-        }
-    };
-    useEffect(() => {
-        getStandings();
-    }, []);
-
     return (
         <>
             <section className="max-w-[1456px] w-[100%] mx-auto my-[25px]">

@@ -1,4 +1,6 @@
-.container{
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+.container {
     max-width: 1300px;
     width: 100%;
     margin: 0 auto;
@@ -31,4 +33,67 @@
     position: absolute;
     right: 0;
     transition: 0.8s;
+}
+
+.css-1efeo2o-MuiButtonBase-root-MuiTab-root.Mui-selected {
+    color: black !important;
+}
+
+.css-1aquho2-MuiTabs-indicator {
+    color: purple !important;
+}
+
+.alls {
+    font-family: "Inter", sans-serif;
+}
+
+
+.scrollbar::-webkit-scrollbar {
+    width: 7px;
+    background: #D9D9D9;
+    border-radius: 6px;
+}
+
+.scrollbar::-webkit-scrollbar-thumb {
+    background-color: #5742A9;
+    border-radius: 6px;
+    border: 3px solid #5742A9;
+}
+
+.standings-table th,
+.standings-table td {
+    padding: 8px;
+    margin: 12px 0;
+}
+
+.standings-table tr {
+    border-radius: 12px !important;
+}
+
+/* Add this CSS in your global CSS file */
+
+:root {
+    --bg-light: #E8E8E6;
+    --bg-dark: #333;
+    --text-light: #000;
+    --text-dark: #fff;
+}
+
+body {
+    background-color: var(--bg-light);
+    color: var(--text-light);
+}
+
+.dark-mode body {
+    background-color: var(--bg-dark);
+    color: var(--text-dark);
+}
+
+.main-content {
+    background-color: var(--bg-light);
+    transition: background-color 0.3s;
+}
+
+.dark-mode .main-content {
+    background-color: var(--bg-dark);
 }
