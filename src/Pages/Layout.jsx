@@ -1,19 +1,16 @@
-import React from "react";
-import Banner from '../Component/Banner/Banner'
-import Navbar from '../Component/Navbar/Navbar'
-import BasicSelect from '../Component/Standings/BasicSelect'
-import Matches from "../Component/Matches/Matches";
-
+import React from 'react'
+import Section from '../Components/component/Section'
+import SectionTwoj from '../Components/CompanentTwo/SectionTwoj'
+import Menu from '../Components/Menu/Menu'
 
 function Layout({ children }) {
-  return (
-    <div className="">
-      <Navbar />
-      <Banner />
-      <Matches />
-      <BasicSelect />
-    </div>
-  );
+    return (
+        <div>
+            <Section />
+            <SectionTwoj />
+            <Menu />
+        </div>
+    )
 }
 
-export default Layout;
+export default Layout
