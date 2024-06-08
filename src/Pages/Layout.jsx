@@ -1,10 +1,10 @@
 import React from 'react'
-import Section from '../Component/Main/Section'
+import Line from '../Component/Line/Line'
 
 function Layout({ children }) {
   return (
     <div>
-      {/* <Section /> */}
+      <Line />
     </div>
   )
 }
