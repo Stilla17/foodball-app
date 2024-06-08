@@ -1,16 +1,12 @@
 import React from 'react'
-import Section from '../Components/component/Section'
-import SectionTwoj from '../Components/CompanentTwo/SectionTwoj'
-import Menu from '../Components/Menu/Menu'
+import Section from '../Component/Main/Section'
 
 function Layout({ children }) {
-    return (
-        <div>
-            <Section />
-            <SectionTwoj />
-            <Menu />
-        </div>
-    )
+  return (
+    <div>
+      {/* <Section /> */}
+    </div>
+  )
 }
 
 export default Layout

@@ -1,13 +1,17 @@
 import React from 'react'
-// import imglogo from '../../assets/logoimg/headerLogo.svg'
+import imglogo from '../../assets/icons/Tvit.svg'
+import standing from '../../assets/icons/standing.svg'
+import highlighting from '../../assets/icons/highlighting.svg'
+import shoping from '../../assets/icons/shoping.svg'
+import news from '../../assets/icons/news.svg'
 // import frame from '../../assets/logoimg/Frame.svg'
 // import frame2 from '../../assets/logoimg/Frame1.svg'
 // import frame3 from '../../assets/logoimg/Frame2.svg'
 // import frame4 from '../../assets/logoimg/Frame4.svg'
 // import frame5 from '../../assets/logoimg/Frame5.svg'
 // import frame6 from '../../assets/logoimg/Frame6.svg'
-import SectionTwoj from '../CompanentTwo/SectionTwoj'
-import Menu from '../Menu/Menu'
+import SectionTwoj from './SectionTwoj'
+import Menu from './Menu'
 
 function Section() {
     return (
@@ -31,8 +35,6 @@ function Section() {
                             </clipPath>
                         </defs>
                     </svg>
-
-                    {/* <img src={frame} alt="logo" className='hover:text-[#F5C451]' /> */}
                     <p>Dashboard</p>
                 </div>
                 <div className='flex my-5 gap-4 nav-main-logo hover:text-[#F5C451]'>
@@ -49,19 +51,19 @@ function Section() {
                     <p>Live Football</p>
                 </div>
                 <div className='flex gap-4'>
-                    <img className='stand' src={frame3} alt="logo" />
+                    <img className='stand' src={standing} alt="logo" />
                     <p>Standings</p>
                 </div>
                 <div className='flex gap-4 my-5'>
-                    <img src={frame6} alt="logo" />
+                    <img src={highlighting} alt="logo" />
                     <p>Highlights</p>
                 </div>
                 <div className='flex gap-4  '>
-                    <img src={frame4} alt="logo" />
+                    <img src={shoping} alt="logo" />
                     <p>Shop</p>
                 </div>
                 <div className='flex gap-4 py-5 '>
-                    <img src={frame5} alt="logo" />
+                    <img src={news} alt="logo" />
                     <p>News</p>
                 </div>
 
