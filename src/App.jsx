@@ -8,7 +8,6 @@ import React from "react";
 // import Clubs from "./Clubs/Clubs";
 import Versus from "./Versus/Versus";
 
-
 function App() {
   return (
     <div className="">
