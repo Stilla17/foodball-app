@@ -1,0 +1,32 @@
+.shopping-item {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.shopping-item p {
+  font-size: 1rem;
+  font-weight: bold;
+}
+.flex {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0 20px;
+}
+.group-right {
+  justify-content: end;
+  display: flex;
+}
+h4 {
+  color: #5742a9;
+  justify-items: start;
+  width: 224px;
+  height: 22px;
+}
+h3 {
+  width: 224px;
+  height: 19px;
+  color: Black;
+}
