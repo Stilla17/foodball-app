@@ -15,14 +15,14 @@ import Menu from './Menu'
 
 function Section() {
     return (
-        <div className='bg-[#1B1C21] w-64'>
-            <div className='text-gray-100 pl-8 py-8'>
+        <div className='sticky bg-[#F6F6F4] w-64'>
+            <div className='text-black pl-8 py-8'>
                 <div className='flex gap-4 pb-20'>
                     <img src={imglogo} alt="logo" />
-                    <p className=''>Onesport</p>
+                    <p>Onesport</p>
                 </div>
                 <div className='pb-6'>
-                    <p className='text-gray-300'>MENU</p>
+                    <p>MENU</p>
                 </div>
                 <div className='flex pt-4 gap-4 nav-main'>
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="gray" xmlns="http://www.w3.org/2000/svg">

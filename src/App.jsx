@@ -1,12 +1,12 @@
 import React from "react";
 import Layout from "./Pages/Layout";
 
+
 function App() {
   return (
-    <div className="">
-      <Layout>
+    <div className="flex ">
+      <Layout />
 
-      </Layout>
     </div>
   );
 }

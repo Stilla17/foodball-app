@@ -1,7 +1,8 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useCallback } from "react";
 
 function Navbar() {
   const [darkMode, setDarkMode] = useState(false);
+  const [num, setNum] = useState(0);
 
   useEffect(() => {
     const savedTheme = localStorage.getItem("theme");
@@ -14,7 +15,21 @@ function Navbar() {
     const newMode = !darkMode;
     setDarkMode(newMode);
     localStorage.setItem("theme", newMode ? "dark" : "light");
+    console.log("hgelokasodsa");
   };
+
+  const numberFa = useCallback(() => {
+    setNum(prev => prev + 1)
+    console.log("asd");
+  }, [num])
+
+  // const toggleTheme = useCallback(() => {
+  //   const newMode = !darkMode;
+  //   setDarkMode(newMode);
+  //   localStorage.setItem("theme", newMode ? "dark" : "light");
+  //   console.log("hgelokasodsa");
+  // }, [darkMode]);
+
 
   useEffect(() => {
     if (darkMode) {
@@ -26,8 +41,8 @@ function Navbar() {
 
   return (
     <>
-      <header>
-        <nav className="flex max-w-[1456px] py-[16px] w-[100%] mx-auto items-center justify-between">
+      <header className="w-[100%]">
+        <nav className="flex sticky py-[16px] px-[24px] mx-auto items-center border-b justify-between">
           <div className="relative flex items-center">
             <input
               className={`inputs outline-none rounded-[6px] py-[10px] px-[32px] w-[548px] ${darkMode ? "text-white bg-gray-800" : "bg-[#E6E6E6] text-black"
@@ -38,7 +53,7 @@ function Navbar() {
           </div>
           <div className="nav-left">
             <div className="flex gap-[24px] items-center">
-              <button className="w-[114px] h-[33px] bg-[#5742A9] text-white rounded-[6px] font-semibold">
+              <button onClick={numberFa} className="w-[114px] h-[33px] bg-[#5742A9] text-white rounded-[6px] font-semibold">
                 Go premium
               </button>
               <img
