@@ -1,13 +1,6 @@
 import React from "react";
-import Portugal from "../Versus/Portugal.png";
-import Belgium from "../Versus/Belgium.png";
-import Bg1 from "../Versus/bg1.png";
-import Bg2 from "../Versus/bg2.png";
-import Back1 from "../Versus/back1.png";
-import Back2 from "../Versus/back2.png";
-import Back3 from "../Versus/back3.png";
-import Hazard from "../Versus/hazard.png";
-import The from "../Versus/the.png";
+import Portugal from "./Portugal.png";
+import Belgium from "./Belgium.png";
 import "./Versus.css";
 
 function Versus() {

@@ -1,28 +1,37 @@
 import React from "react";
-// import Shopping from "./Components/Shopping/Shopping";
-// import Target from "./Components/Target/target";
-// import Line from "./Components/Main/Line";
-// import "./Components/Target/target.css";
-// import { Route, Routes } from "react-router-dom";
-// import Layout from "./Page/Layout";
-// import Clubs from "./Clubs/Clubs";
-import Versus from "./Versus/Versus";
+import Line from "../Component/Line/Line.jsx";
+import "../Component/Line/Line.css";
+import Banner from "../Component/Banner/Banner";
+import Clubs from "../Component/Clubs/Clubs.jsx";
+import "../Component/Clubs/Clubs.css";
+import Menu from "../Component/Main/Menu.jsx";
+import Section from "../Component/Main/Section.jsx";
+import SectionTwo from "../Component/Main/SectionTwo.jsx";
+import LabTabs from "../Component/Matches/LabTabs.jsx";
+import Matches from "../Component/Matches/Matches.jsx";
+import Navbar from "../Component/Navbar/Navbar.jsx";
+import Shopping from "../Component/Shopping/Shopping.jsx";
+import Standings from "../Component/Standigs/Standigs.jsx";
+import Target from "../Component/target/target.jsx";
+import "../Component/target/target.css";
 
-function App() {
+function Layout({ children }) {
   return (
-    <div className="">
-      <Versus />
-      {/* {<Line />}
-      {<Target />}
-      {<Clubs />} */}
-      {/* {<Shopping />} */}
-
-      {/* <Routes>
-        <Route path="/" element={<Common />} />
-        <Route path="/main" element={<Main />} />
-      </Routes> */}
+    <div>
+      <Clubs />
+      <Menu />
+      <Section />
+      <SectionTwo />
+      <Matches />
+      <Shopping />
+      <Standings />
+      <Target />
+      <LabTabs />
+      <Line />
+      <Banner />
+      <Navbar />
     </div>
   );
 }
 
-export default App;
+export default Layout;

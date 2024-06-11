@@ -6,13 +6,13 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
-import Forma1 from "../Shopping/Forma1.png";
-import Forma2 from "../Shopping/Forma2.png";
-import Forma3 from "../Shopping/Forma3.png";
-import Forma4 from "../Shopping/Forma4.png";
-import Forma5 from "../Shopping/Forma5.png";
-import Left from "../Shopping/Left.png";
-import Right from "../Shopping/Right.png";
+import Forma1 from "./Forma1.png";
+import Forma2 from "./Forma2.png";
+import Forma3 from "./Forma3.png";
+import Forma4 from "./Forma4.png";
+import Forma5 from "./Forma5.png";
+import Left from "./Left.png";
+import Right from "./Right.png";
 
 function Shopping() {
   return (
