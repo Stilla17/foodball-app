@@ -3,8 +3,8 @@ import React from 'react'
 function SectionTwoj() {
     return (
         <>
-            <div className='bg-[#1B1C21] text-white flex items-center mt-10'>
-                <p className='text-gray-300'>Football League</p>
+            <div className='text-black flex items-center mt-10'>
+                <p>Football League</p>
             </div>
             <div className='mt-6 '>
                 <div className='flex gap-3'>
