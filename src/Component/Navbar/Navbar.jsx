@@ -5,7 +5,7 @@ import { useTranslation } from 'react-i18next';
 const Navbar = () => {
   const [darkMode, setDarkMode] = useState(false);
   const [num, setNum] = useState(0);
-  const { t, i18n } = useTranslation();
+  const { t } = useTranslation();
 
   useEffect(() => {
     const savedTheme = localStorage.getItem("theme");
@@ -44,6 +44,7 @@ const Navbar = () => {
         </div>
         <div className="nav-left">
           <div className="flex gap-[24px] items-center">
+            
             <LanguageSwitch />
 
             <button onClick={numberFa} className="w-[114px] h-[33px] bg-[#5742A9] text-white rounded-[6px] font-semibold">

@@ -1,3 +1,8 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.nav-main:hover path {
+    fill: #F5C451;
+    color: #F5C451;
+}
