@@ -1,6 +1,6 @@
 import React from 'react'
 import imglogo from '../../assets/icons/Tvit.svg'
-gitimport SectionTwoj from './SectionTwoj'
+import SectionTwoj from './SectionTwoj'
 import Menu from './Menu'
 
 function Section() {
