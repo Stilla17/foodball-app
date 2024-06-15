@@ -1,28 +1,16 @@
-
 import React from "react";
-import Layout from "./Pages/Layout";
+import Line from "../Component/Line/Line";
+import Navbar from "../Component/Navbar/Navbar";
+import Section from "../Component/Main/Section";
 
-function App() {
+function Layout({ children }) {
   return (
-    <div className="w">
-      <div>
-        <Clubs />
-        <Menu />
-        <Section />
-        <SectionTwo />
-        <Matches />
-        <Shopping />
-        <Standings />
-        <Target />
-      </div>
-      <Layout>
-        <LabTabs />
-        <Banner />
-        <Line />
-        <Navbar />
-      </Layout>
+    <div className="flex">
+      <Line />
+      <Section />
+      <Navbar />
     </div>
   );
 }
 
-export default App;
+export default Layout;
