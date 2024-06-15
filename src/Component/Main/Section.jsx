@@ -1,10 +1,6 @@
 import React from 'react'
 import imglogo from '../../assets/icons/Tvit.svg'
-import standing from '../../assets/icons/standing.svg'
-import highlighting from '../../assets/icons/highlighting.svg'
-import shoping from '../../assets/icons/shoping.svg'
-import news from '../../assets/icons/news.svg'
-import SectionTwoj from './SectionTwoj'
+gitimport SectionTwoj from './SectionTwoj'
 import Menu from './Menu'
 
 function Section() {
