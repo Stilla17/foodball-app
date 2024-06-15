@@ -5,10 +5,12 @@ import "./Component/Target/target.css";
 import Layout from "./Pages/Layout";
 
 function App() {
+
   return (
-    <>
+    <div className="flex ">
       <Layout />
-    </>
+
+    </div>
   );
 }
 
