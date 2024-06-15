@@ -4,5 +4,5 @@
 
 .nav-main:hover path {
     fill: #F5C451;
-    color: #F5C451;
+    transition: 0.4s;
 }
