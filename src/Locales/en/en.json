@@ -1,4 +1,15 @@
 {
-    "welcome": "Welcome to React",
-    "description": "This is a simple example of React with i18next"
+    "welcome": "Search something",
+    "description": "This is a simple example of React with i18next",
+    "dashboard": "Dashboard",
+    "football": "Live football",
+    "table": "Standings",
+    "highlights": "Highlights",
+    "shop": "Shop",
+    "news": "News",
+    "premium": "Go premium",
+    "menu": "MENU",
+    "league": "Favorite Club"
+
+
 }

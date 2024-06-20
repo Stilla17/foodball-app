@@ -1,4 +1,12 @@
 {
-    "welcome": "Добро пожаловать",
-    "description": "Ceci est un exemple simple de React avec i18next"
+    "welcome": "Ищи что-то",
+    "dashboard": "Панель проиборов",
+    "football": "Живой футбол",
+    "table": "Турнирная таблица",
+    "highlights": "Основные моменты",
+    "shop": "Магазин",
+    "news": "Новости",
+    "premium": "Премиум",
+    "menu": "МЕНЮ",
+    "league": "Любимый клуб"
 }

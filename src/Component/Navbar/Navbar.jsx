@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useCallback } from "react";
 import LanguageSwitch from "./LanguageSwitch";
-import { useTranslation } from 'react-i18next';
+import { useTranslation } from "react-i18next";
 
 const Navbar = () => {
   const [darkMode, setDarkMode] = useState(false);
@@ -20,10 +20,6 @@ const Navbar = () => {
     localStorage.setItem("theme", newMode ? "dark" : "light");
   };
 
-  const numberFa = useCallback(() => {
-    setNum(prev => prev + 1);
-  }, []);
-
   useEffect(() => {
     if (darkMode) {
       document.documentElement.classList.add("dark-mode");
@@ -37,18 +33,22 @@ const Navbar = () => {
       <nav className="flex sticky py-[16px] px-[24px] mx-auto items-center border-b justify-between">
         <div className="relative flex items-center">
           <input
-            className={`inputs outline-none rounded-[6px] py-[10px] px-[32px] w-[548px] ${darkMode ? "text-white bg-gray-800" : "bg-[#E6E6E6] text-black"} transition duration-300 ease-in-out`}
+            className={`inputs outline-none rounded-[6px] py-[10px] px-[32px] w-[548px] ${
+              darkMode ? "text-white bg-gray-800" : "bg-[#E6E6E6] text-black"
+            } transition duration-300 ease-in-out`}
             type="text"
-            placeholder={t('welcome')}
+            placeholder={t("welcome")}
           />
         </div>
         <div className="nav-left">
           <div className="flex gap-[24px] items-center">
-            
             <LanguageSwitch />
 
-            <button onClick={numberFa} className="w-[114px] h-[33px] bg-[#5742A9] text-white rounded-[6px] font-semibold">
-              Go premium
+            <button
+              onClick={numberFa}
+              className="w-[114px] h-[33px] bg-[#5742A9] text-white rounded-[6px] font-semibold"
+            >
+              {t("premium")}
             </button>
             <img
               className="cursor-pointer"
@@ -60,7 +60,10 @@ const Navbar = () => {
               src="src/assets/icons/zil.svg"
               alt="Zil Icon"
             />
-            <div className="relative cursor-pointer transition-[0.8s]" onClick={toggleTheme}>
+            <div
+              className="relative cursor-pointer transition-[0.8s]"
+              onClick={toggleTheme}
+            >
               {darkMode ? (
                 <img
                   className="w-[30px] h-[44px]"
