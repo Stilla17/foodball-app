@@ -1,9 +1,7 @@
-import React from "react";
-import imglogo from "../../assets/icons/Tvit.svg";
-import SectionTwoj from "./SectionTwoj";
-import Menu from "./Menu";
-import { useTranslation } from "react-i18next";
-import LanguageSwitch from "../Navbar/LanguageSwitch";
+import React from 'react'
+import imglogo from '../../assets/icons/Tvit.svg'
+import SectionTwoj from './SectionTwoj'
+import Menu from './Menu'
 
 function Section() {
   const { t } = useTranslation();
