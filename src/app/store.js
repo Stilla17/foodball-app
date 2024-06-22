@@ -1,10 +1,12 @@
 import { configureStore } from '@reduxjs/toolkit'
-import counterReducer from '../features/counter/counterSlice'
+import counterReducer from '../features/counterSlice/counterSlice';
+import switcherReducer from '../features/switch/switchSlice';
 
-configureStore({
+const store = configureStore({
     reducer: {
-        counter: counterReducer
+        counter: counterReducer,
+        switcher: switcherReducer
     }
 })
 
-export default configureStore;
+export default store;
