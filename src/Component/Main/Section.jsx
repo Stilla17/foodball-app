@@ -2,6 +2,9 @@ import React from 'react'
 import imglogo from '../../assets/icons/Tvit.svg'
 import SectionTwoj from './SectionTwoj'
 import Menu from './Menu'
+import { useTranslation } from 'react-i18next';
+import LanguageSwitch from "/src/Component/Navbar/LanguageSwitch.jsx";
+
 
 function Section() {
   const { t } = useTranslation();
