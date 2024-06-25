@@ -1,10 +1,9 @@
-import React, { useState, useEffect, useCallback } from "react";
+import React from "react";
 import LanguageSwitch from "./LanguageSwitch";
-import { useTranslation } from "react-i18next";
+import { useTranslation } from 'react-i18next';
 
 const Navbar = () => {
-  const [darkMode, setDarkMode] = useState(false);
-  const [num, setNum] = useState(0);
+
   const { t } = useTranslation();
 
   useEffect(() => {
@@ -21,7 +20,7 @@ const Navbar = () => {
   };
 
   const numberFa = useCallback(() => {
-    setNum((prev) => prev + 1);
+    setNum(prev => prev + 1);
   }, []);
 
   useEffect(() => {
@@ -33,25 +32,21 @@ const Navbar = () => {
   }, [darkMode]);
 
   return (
-    <header className="w-[100%]">
-      <nav className="flex sticky py-[16px] px-[24px] mx-auto items-center border-b justify-between">
+    <header className={`w-[100%] ${darkMode ? "text-white bg-[#212227]" : "bg-[#E6E6E6] text-black"} transition duration-300 ease-in-out`}>
+      <nav className={`flex sticky py-[16px] px-[24px] mx-auto items-center border-2  justify-between ${darkMode ? "text-white bg-[#1B1C21] border-[#313131]" : "bg-[#E6E6E6] border-[#D3D3D3] text-black"}`}>
         <div className="relative flex items-center">
           <input
-            className={`inputs outline-none rounded-[6px] py-[10px] px-[32px] w-[548px] ${
-              darkMode ? "text-white bg-gray-800" : "bg-[#E6E6E6] text-black"
-            } transition duration-300 ease-in-out`}
+            className={`inputs outline-none rounded-[6px] py-[10px] px-[32px] w-[548px] ${darkMode ? "text-white bg-gray-800" : "bg-[#E6E6E6] text-black"} transition duration-300 ease-in-out`}
             type="text"
             placeholder={t("welcome")}
           />
         </div>
         <div className="nav-left">
           <div className="flex gap-[24px] items-center">
+            
             <LanguageSwitch />
 
-            <button
-              onClick={numberFa}
-              className="w-[114px] h-[33px] bg-[#5742A9] text-white rounded-[6px] font-semibold"
-            >
+            <button onClick={numberFa} className="w-[114px] h-[33px] bg-[#5742A9] text-white rounded-[6px] font-semibold">
               Go premium
             </button>
             <img
@@ -92,7 +87,7 @@ const Navbar = () => {
           </div>
         </div>
       </nav>
-    </header>
+    </header >
   );
 };
 
