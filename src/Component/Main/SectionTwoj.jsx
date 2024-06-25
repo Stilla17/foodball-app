@@ -1,35 +1,98 @@
 import React from "react";
-import a from "../../assets/a.png";
-import aa from "../../assets/aa.png";
-import aaa from "../../assets/aaa.png";
-import aaaa from "../../assets/aaaa.png";
-import aaaaa from "../../assets/aaaaa.png";
+import { AppstoreOutlined } from "@ant-design/icons";
+import { Menu } from "antd";
+
+const items = [
+  {
+    key: "sub2",
+    label: "Football League",
+    icon: <AppstoreOutlined />,
+    children: [
+      {
+        key: "1",
+        label: (
+          <div className="flex items-center">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/en/e/eb/FIFA_World_Cup_Qatar_2022_Logo.svg"
+              alt="Worldcup Qatar 2022"
+              style={{ width: 20, marginRight: 10 }}
+            />
+            Worldcup Qatar 2022
+          </div>
+        ),
+      },
+      {
+        key: "2",
+        label: (
+          <div className="flex items-center">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/e/e7/UEFA_Champions_League_logo_2.svg"
+              alt="Champions League"
+              style={{ width: 20, marginRight: 10 }}
+            />
+            Champions League
+          </div>
+        ),
+      },
+      {
+        key: "3",
+        label: (
+          <div className="flex items-center">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/en/f/f2/Premier_League_Logo.svg"
+              alt="Premier League"
+              style={{ width: 20, marginRight: 10 }}
+            />
+            Premier League
+          </div>
+        ),
+      },
+      {
+        key: "4",
+        label: (
+          <div className="flex items-center">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/en/7/76/La_Liga_logo.svg"
+              alt="La Liga"
+              style={{ width: 20, marginRight: 10 }}
+            />
+            La Liga
+          </div>
+        ),
+      },
+      {
+        key: "5",
+        label: (
+          <div className="flex items-center">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/en/b/ba/Ligue_1_Uber_Eats_2020.svg"
+              alt="Ligue 1"
+              style={{ width: 20, marginRight: 10 }}
+            />
+            Ligue 1
+          </div>
+        ),
+      },
+    ],
+  },
+];
 
 function SectionTwoj() {
-    return (
-        <>
-            <div className='text-black flex items-center mt-10'>
-                <p>Football League</p>
-            </div>
-            <div className='mt-6 '>
-                <div className='flex gap-3'>
-                    <p>Worldcup Qatar 2022</p>
-                </div>
-                <div className='my-5 flex gap-3'>
-                    <p>Champions League</p>
-                </div>
-                <div className='my-5 flex gap-3'>
-                    <p>Premier League</p>
-                </div>
-                <div className='flex gap-3'>
-                    <p>La Liga</p>
-                </div>
-                <div className='flex gap-3 my-5'>
-                    <p>Ligue 1</p>
-                </div>
-            </div>
-        </>
-    )
+  const onClick = (e) => {
+    console.log("click ", e);
+  };
+
+  return (
+    <>
+      <Menu
+        onClick={onClick}
+        defaultSelectedKeys={["1"]}
+        defaultOpenKeys={["sub2"]}
+        mode="inline"
+        items={items}
+      />
+    </>
+  );
 }
 
 export default SectionTwoj;

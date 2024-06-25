@@ -2,13 +2,15 @@ import React from "react";
 import Line from "../Component/Line/Line";
 import Navbar from "../Component/Navbar/Navbar";
 import Section from "../Component/Main/Section";
+import { Counter } from "../Counter/Counter";
 
 function Layout({ children }) {
-  return (
+  return ( 
     <div className="flex">
-      <Line />
-      <Section />
+      {/* <Line />
+      <Section /> */}
       <Navbar />
+      <Counter />
     </div>
   );
 }

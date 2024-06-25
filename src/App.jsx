@@ -4,12 +4,12 @@ import "./Component/Clubs/Clubs.css";
 import "./Component/Target/target.css";
 import Layout from "./Pages/Layout";
 
-function App() {
 
+function App() {
   return (
     <div className="flex ">
       <Layout />
-
+      
     </div>
   );
 }
