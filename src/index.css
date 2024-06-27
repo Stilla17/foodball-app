@@ -3,6 +3,45 @@
 @tailwind utilities;
 
 .nav-main:hover path {
-    fill: #F5C451;
-    transition: 0.4s;
+  fill: #f5c451;
+  transition: 0.4s;
+}
+:where(.css-dev-only-do-not-override-zg0ahe).ant-menu-light,
+:where(.css-dev-only-do-not-override-zg0ahe).ant-menu-light.ant-menu-inline
+  .ant-menu-sub.ant-menu-inline {
+  background: none;
+}
+
+:where(.css-dev-only-do-not-override-zg0ahe).ant-menu-inline
+  .ant-menu-submenu-title {
+  padding-inline: 0;
+}
+.ant-menu-submenu-title {
+  padding: 0 !important;
+}
+
+:where(.css-dev-only-do-not-override-zg0ahe).ant-menu-light:not(
+    .ant-menu-horizontal
+  )
+  .ant-menu-submenu-title:hover {
+  background: none;
+}
+
+:where(.css-dev-only-do-not-override-zg0ahe).ant-menu-light:not(
+    .ant-menu-horizontal
+  )
+  .ant-menu-item:not(.ant-menu-item-selected):hover {
+  background: none;
+}
+
+:where(.css-dev-only-do-not-override-zg0ahe).ant-menu-light
+  .ant-menu-item-selected {
+  background: none;
+  color: black;
+}
+
+:where(.css-dev-only-do-not-override-zg0ahe).ant-menu-light
+  .ant-menu-item-selected {
+  background: none;
+  color: black;
 }

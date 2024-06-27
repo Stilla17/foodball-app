@@ -1,10 +1,15 @@
 import React from "react";
 import { AppstoreOutlined } from "@ant-design/icons";
 import { Menu } from "antd";
+import logo1 from "../../assets/a.png";
+import logo2 from "../../assets/aa.png";
+import logo3 from "../../assets/aaa.png";
+import logo4 from "../../assets/aaaa.png";
+import logo5 from "../../assets/aaaaa.png";
 
 const items = [
   {
-    key: "sub2",
+    key: "sub",
     label: "Football League",
     icon: <AppstoreOutlined />,
     children: [
@@ -13,7 +18,7 @@ const items = [
         label: (
           <div className="flex items-center">
             <img
-              src="https://upload.wikimedia.org/wikipedia/en/e/eb/FIFA_World_Cup_Qatar_2022_Logo.svg"
+              src={logo1}
               alt="Worldcup Qatar 2022"
               style={{ width: 20, marginRight: 10 }}
             />
@@ -26,7 +31,7 @@ const items = [
         label: (
           <div className="flex items-center">
             <img
-              src="https://upload.wikimedia.org/wikipedia/commons/e/e7/UEFA_Champions_League_logo_2.svg"
+              src={logo2}
               alt="Champions League"
               style={{ width: 20, marginRight: 10 }}
             />
@@ -39,7 +44,7 @@ const items = [
         label: (
           <div className="flex items-center">
             <img
-              src="https://upload.wikimedia.org/wikipedia/en/f/f2/Premier_League_Logo.svg"
+              src={logo3}
               alt="Premier League"
               style={{ width: 20, marginRight: 10 }}
             />
@@ -52,7 +57,7 @@ const items = [
         label: (
           <div className="flex items-center">
             <img
-              src="https://upload.wikimedia.org/wikipedia/en/7/76/La_Liga_logo.svg"
+              src={logo4}
               alt="La Liga"
               style={{ width: 20, marginRight: 10 }}
             />
@@ -65,7 +70,7 @@ const items = [
         label: (
           <div className="flex items-center">
             <img
-              src="https://upload.wikimedia.org/wikipedia/en/b/ba/Ligue_1_Uber_Eats_2020.svg"
+              src={logo5}
               alt="Ligue 1"
               style={{ width: 20, marginRight: 10 }}
             />
@@ -83,15 +88,13 @@ function SectionTwoj() {
   };
 
   return (
-    <>
-      <Menu
-        onClick={onClick}
-        defaultSelectedKeys={["1"]}
-        defaultOpenKeys={["sub2"]}
-        mode="inline"
-        items={items}
-      />
-    </>
+    <Menu
+      onClick={onClick}
+      defaultSelectedKeys={["1"]}
+      defaultOpenKeys={["sub2"]}
+      mode="inline"
+      items={items}
+    />
   );
 }
 
