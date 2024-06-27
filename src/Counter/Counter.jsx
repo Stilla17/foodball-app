@@ -4,7 +4,7 @@ import { decrement, increment } from '../features/counterSlice/counterSlice'
 
 function Counter() {
 
-    const count = useSelector(state => state.counter.value)
+    const count = useSelector(state => state.counter.value)//1
     const dispatch = useDispatch()
 
     return (

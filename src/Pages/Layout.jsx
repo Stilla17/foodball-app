@@ -4,6 +4,7 @@ import Navbar from '../Component/Navbar/Navbar'
 import Section from '../Component/Main/Section'
 import Counter from '../Counter/Counter'
 import Swithcer from '../Switcher/Swithcer'
+import Field from '../Fields/Field'
 
 function Layout({ children }) {
   return (
@@ -17,6 +18,7 @@ function Layout({ children }) {
         <div className=''>
           <Counter />
           <Swithcer />
+          <Field />
         </div>
       </div>
     </>
