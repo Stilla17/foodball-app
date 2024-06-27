@@ -1,6 +1,5 @@
 import React from "react";
 import Layout from "./Pages/Layout";
-import Counter from "./Counter/Counter";
 
 function App() {
 

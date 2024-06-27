@@ -55,7 +55,6 @@ function Line() {
             <img src={eleven} alt="img" className="images11 mb-10" />
           </Link>
         </div>
-
       </div>
     </>
   );
