@@ -86,7 +86,7 @@ export default function BasicSelect() {
       {loading ? (
         <div className="grid gap-4">
           {[...Array(6)].map((_, index) => (
-            <div key={index} className="skeleton h-12 w-full"></div>
+            <div key={index} className="skeleton h-6 w-full"></div>
           ))}
         </div>
       ) : (
