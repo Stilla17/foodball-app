@@ -5,6 +5,8 @@ import Section from '../Component/Main/Section'
 import Counter from '../Counter/Counter'
 import Swithcer from '../Switcher/Swithcer'
 import Field from '../Fields/Field'
+import Shopping from "../Component/Shopping/Shopping"
+
 
 function Layout({ children }) {
   return (
@@ -16,9 +18,10 @@ function Layout({ children }) {
       <div className='flex flex-col w-[100%]'>
         <Navbar />
         <div className=''>
-          <Counter />
-          <Swithcer />
-          <Field />
+          {/* <Counter /> */}
+          {/* <Swithcer /> */}
+          {/* <Field /> */}
+          {/* <Shopping /> */}
         </div>
       </div>
     </>
