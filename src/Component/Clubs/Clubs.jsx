@@ -4,7 +4,7 @@ import Avfs from "./Avfs.svg";
 import Arsenal from "./Arsenal.svg";
 import Liverpool from "./Liverpool.svg";
 import Mu from "./Mu.svg";
-import Westham from "./Westham.svg";
+import Westham from "/src/Component/Clubs/Imgae.svg";
 import Mc from "./Mc.svg";
 import Club from "./Club.svg";
 import Left from "./Left.svg";
@@ -19,21 +19,21 @@ import "swiper/css/scrollbar";
 
 function Clubs() {
   return (
-    <div className="clubs-container">
-      <div className="flex">
+    <div className="mt-12">
+      <div className="flex justify-between">
         <div className="group-left">
-          <h3 className="text">🎮 Follow Club</h3>
+          <h3 className="text ">🎮 Follow Club</h3>
         </div>
 
         <div className="group-right">
-          <div className="swiper-button-prev-custom">
+          <div className="swiper-button-prev-customs">
             <div className="left">
               <img src={Left} alt="left" />
             </div>
           </div>
 
           <div className="left">
-            <div className="swiper-button-next-custom">
+            <div className="swiper-button-next-customs">
               <img src={Right} alt="right" />
             </div>
           </div>
@@ -45,8 +45,8 @@ function Clubs() {
         spaceBetween={120}
         slidesPerView={7}
         navigation={{
-          prevEl: ".swiper-button-prev-custom",
-          nextEl: ".swiper-button-next-custom",
+          prevEl: ".swiper-button-prev-customs",
+          nextEl: ".swiper-button-next-customs",
         }}
         loop={true}
         onSwiper={(swiper) => console.log(swiper)}

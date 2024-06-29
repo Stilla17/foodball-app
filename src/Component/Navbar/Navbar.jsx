@@ -15,7 +15,7 @@ const Navbar = () => {
           <input
             className={`inputs outline-none rounded-[6px] py-[10px] px-[32px] w-[548px] ${darkMode ? "text-white bg-[#2E3034]" : "bg-[#F6F6F4] text-black"} transition duration-300 ease-in-out`}
             type="text"
-            placeholder={t('welcome')}
+            placeholder={t("welcome")}
           />
         </div>
         <div className="nav-left">
@@ -36,7 +36,10 @@ const Navbar = () => {
               src="src/assets/icons/zil.svg"
               alt="Zil Icon"
             />
-            <div className="relative cursor-pointer transition-[0.8s]" onClick={toggleTheme}>
+            <div
+              className="relative cursor-pointer transition-[0.8s]"
+              onClick={toggleTheme}
+            >
               {darkMode ? (
                 <img
                   className="w-[30px] h-[44px]"

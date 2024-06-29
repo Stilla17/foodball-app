@@ -1,6 +1,6 @@
 import React from "react";
-import Portugal from "../Versus/Portugal.png";
-import Belgium from "../Versus/Belgium.png";
+import Portugal from "./Portugal.png";
+import Belgium from "./Belgium.png";
 import "./Versus.css";
 
 function Versus() {
