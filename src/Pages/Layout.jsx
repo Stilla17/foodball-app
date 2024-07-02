@@ -19,7 +19,7 @@ function Layout() {
         <Line />
         <Section />
       </div>
-      <div className="flex flex-col w-[100%]">
+      <div className=" pl-6 flex flex-col w-[100%]">
         <Navbar />
         <Banner />
         <Matches />

@@ -1,6 +1,11 @@
 import React from 'react'
+import useDarkMode from '../others/useDarkMode';
+
 
 function Banner() {
+
+    const [darkMode, toggleTheme] = useDarkMode();
+
     return (
         <>
             <section className="max-w-[1456px] w-[100%] mx-auto my-[25px]">
@@ -9,7 +14,7 @@ function Banner() {
                         <img src="src/assets/images/Card.svg" alt="" />
                     </div>
                     <div className="wrap-right">
-                        <div className="card w-[301px] bg-white rounded-2xl h-[356px]">
+                        <div className={`card w-[301px] rounded-2xl h-[356px] ${darkMode ? "bg-white" : "bg-[#1B1C21]"}`}>
                             <p className="text-center pt-[27px] font-semibold">
                                 Live Match{" "}
                             </p>
